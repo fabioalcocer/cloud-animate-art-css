@@ -9,18 +9,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #181c1f;
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  background: linear-gradient(220.55deg, #b7dcff 0%, #ffa4f6 100%);
 }
 
 .container {
   height: 400px;
   position: relative;
-  border-bottom: 2px solid #333;
 }
 
 .cloud {
   position: relative;
-  top: 50px;
+  top: 20px;
   width: 320px;
   height: 100px;
   background-color: #fff;
@@ -49,15 +49,28 @@ body {
 
 .rain span {
   position: relative;
-  bottom: -40px;
+  bottom: -60px;
   width: 10px;
   height: 10px;
-  background-color: rgb(0, 151, 206);
+  background-color: rgb(0, 185, 252);
   margin: 0 2px;
   border-radius: 50%;
   animation: animate 5s linear infinite;
   animation-duration: calc(20s / var(--i));
   transform-origin: bottom;
+}
+
+.nezuko-img {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(59, 58, 58, 0.282);
+}
+
+.nezuko-img.jump {
+  animation: jump 0.9s alternate;
 }
 
 @keyframes animate {
@@ -71,5 +84,15 @@ body {
 
   100% {
     transform: translateY(300px) scale(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
