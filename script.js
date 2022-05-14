@@ -7,5 +7,4 @@ gif.addEventListener('click', () => {
   // audio.setAttribute('autoplay', "true");
   audio.play()
   audio.volume = 0.2;
-  gif.classList.toggle('animate')
 })
