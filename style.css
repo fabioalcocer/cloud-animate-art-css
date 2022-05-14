@@ -1,5 +1,5 @@
 :root {
-  --color-cloud: rgb(209, 209, 209);
+  --color-cloud: rgb(203, 203, 203);
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 
 .cloud {
   position: relative;
-  top: 5px;
+  top: -15px;
   width: 320px;
   height: 100px;
   background-color: var(--color-cloud);
